@@ -1,2 +1,2 @@
-# BTS4410
+# BTS
 Assignments
