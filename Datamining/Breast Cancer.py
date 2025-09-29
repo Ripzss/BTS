@@ -35,7 +35,7 @@ plt.ylabel("Faktisk verdi")
 plt.xlabel("Predikert verdi")
 plt.show()
 
-
+#3
 def hungarian_match(y_true, y_pred):
     """
     Matches predicted cluster labels to true labels using the Hungarian algorithm.
@@ -87,10 +87,11 @@ for i in range(2):
     #plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], c='red', marker='X', s=200, label='Centroids')
     plt.xlabel("Principal Component 1")
     plt.ylabel("Principal Component 2")
-    plt.title("K-means Clustering on Iris Dataset (PCA-reduced data)")
+    plt.title("K-means Clustering on Breast Cancer Dataset (PCA-reduced data)")
     plt.legend()
 plt.show()
 
+#4
 X_test["mean radius thr"] = (X_test["mean radius"] > X_test["mean radius"].mean())*1
 colors = {0: 'red', 1: 'blue'}
 
@@ -108,6 +109,6 @@ for i in np.asarray(X_test["mean radius thr"]):
     #plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], c='red', marker='X', s=200, label='Centroids')
     plt.xlabel("Principal Component 1")
     plt.ylabel("Principal Component 2")
-    plt.title("K-means Clustering on Iris Dataset (PCA-reduced data)")
+    plt.title("K-means Clustering on Breast Cancer Dataset (PCA-reduced data)")
     #plt.legend()
 plt.show()
