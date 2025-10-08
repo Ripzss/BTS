@@ -1,12 +1,11 @@
 import random
 
-# number of cities
+
+#oppgit Pseduo kode
 N = 500
 
-# initialize the table with -1
 Table = [[-1 for j in range(N)] for i in range(N)]
 
-# fill symmetric random distances
 for i in range(N):
     for j in range(N):
         if Table[i][j] == -1 and i != j:
@@ -24,7 +23,7 @@ def city_length (city,Table):
     total += Table[city[-1]][city[0]]
     return total
 
-#Random Initial Solution
+#Random Algorithm
 cities = list(range(N))
 random_city = cities[:]
 random.shuffle(random_city)
@@ -33,7 +32,7 @@ random_distance = city_length(random_city,Table)
 print("Random City Order", random_city)
 print("Random Distance", random_distance)
 
-#Greedy initial Solution
+#Greedy Algorithm
 def greedy_city(Table, start = 0):
     N = len(Table)
     unvisisted = list(range(N))
